@@ -1,7 +1,7 @@
-/* #produk:hover {
-    font-weight: bold;
-} 
+.hilangkanDisplay{
+    display: none;
+}
 
-#cart:hover  {
+.bold {
     font-weight: bold;
-} */
+}

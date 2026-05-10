@@ -16,17 +16,17 @@ function renderCart() {
             </div>
         `;
     } else {
-        // 
+        isiKeranjang.innerHTML = ""
         cart.forEach(c => {
             isiKeranjang.innerHTML += `
                 <div class="d-flex" style="margin: 10px 0px;">
-                    <img src="${c.image}" class="img-fluid rounded-start" alt="...">
+                    <img src="${c.image}" class="img-fluid rounded-start" style="width: ${c.marginGambar}px;" alt="...">
                     <div class="w-100 shadow-sm">
-                        <div class="d-flex justify-content-between" style="margin-top: 150px;">
+                        <div class="d-flex justify-content-between" style="margin-top: 120px;">
                             <div class="item ms-3">
                                 <h5 class="card-title">${c.namaBaju}</h5>
                                 <p class="card-text">${c.gender}, ${c.ukuranBaju}</p>
-                                <p class="card-text text-body-secondary">${c.StringHarga}</p>
+                                <p class="card-text text-body-secondary">Rp ${c.StringHarga}</p>
                             </div>
                             <div class="item d-flex">
                                 <button class="btn btn-outline-secondary" style="margin-top: 30px; margin-bottom: 70px;" type="button">-</button>
@@ -34,7 +34,7 @@ function renderCart() {
                                 <button class="btn btn-outline-secondary" style="margin-top: 30px; margin-bottom: 70px;" type="button">+</button>
                             </div>
                             <div class="item mt-1 me-3">
-                                <h6 class="fw-bold">${c.jumlahPesan * c.hargaNum}</h6>
+                                <h6 class="fw-bold">${c.StringHarga}</h6>
                                 <button type="button" class="btn btn-danger mt-3 ms-3">Hapus</button>
                             </div>
                         </div>
@@ -45,22 +45,36 @@ function renderCart() {
     }
 }
 
-function tambahKeCart(gambar, nama, jenisKelamin, ukuran, sHarga, harga, jumlah) {
-    cart.forEach(c => {
-        if (c.namaBaju != nama) {
-            total += harga;
+function tambahKeCart(gambar, nama, jenisKelamin, ukuran, sHarga, harga, jumlah, margin2) {
+    if (cart.length === 0) {
+        total += harga;
 
-            cart.push({
-                image: gambar,
-                namaBaju: nama, 
-                gender: jenisKelamin,
-                ukuranBaju: ukuran,
-                StringHarga: sHarga,
-                hargaNum : harga,
-                jumlahPesan: jumlah
-            })  
-        }
-    })
+        cart.push({
+            image: gambar,
+            namaBaju: nama, 
+            gender: jenisKelamin,
+            ukuranBaju: ukuran,
+            StringHarga: sHarga,
+            hargaNum : harga,
+            jumlahPesan: jumlah,
+            marginGambar: margin2
+        })  
+    } else {
+        total += harga;
+        
+        cart.push({
+            image: gambar,
+            namaBaju: nama, 
+            gender: jenisKelamin,
+            ukuranBaju: ukuran,
+            StringHarga: sHarga,
+            hargaNum : harga,
+            jumlahPesan: jumlah,
+            marginGambar: margin2
+        })
+    }
+
+    renderCart()
 }
 
 let btnDeleteAll = document.querySelector('#btnDeleteAll');

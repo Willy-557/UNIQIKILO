@@ -1,25 +1,25 @@
 
 
 const produk = [ 
-    { id: 1, kategori: "Kaos", jenisKelamin: "Pria", sHarga: "Rp 129.000", ukuran: "XS-3XL", nama: "T-Shirt Soft Touch Kerah Bulat Lengan Panjang", harga: 129000, image: "Asset_Tugas/Pria/Produk1.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 199.000", margin: 0, padding: 23}, 
+    { id: 1, kategori: "Kaos", jenisKelamin: "Pria", sHarga: "Rp 129.000", ukuran: "XS-3XL", nama: "T-Shirt Soft Touch Kerah Bulat Lengan Panjang", harga: 129000, image: "Asset_Tugas/Pria/Produk1.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 199.000", margin: 0, padding: 23, margin2: 250}, 
 
-    { id: 2, kategori: "Jaket", jenisKelamin: "Pria", sHarga: "Rp 399.000", ukuran: "XS-3XL", nama: "Jaket Risleting DRY-EX Proteksi Sinar UV", harga: 399000, image: "Asset_Tugas/Pria/Produk2.jpg", cekDiskon: false, margin: 28, padding: 23}, 
+    { id: 2, kategori: "Jaket", jenisKelamin: "Pria", sHarga: "Rp 399.000", ukuran: "XS-3XL", nama: "Jaket Risleting DRY-EX Proteksi Sinar UV", harga: 399000, image: "Asset_Tugas/Pria/Produk2.jpg", cekDiskon: false, margin: 28, padding: 23, margin2: 250}, 
 
-    { id: 3, kategori: "Kaos", jenisKelamin: "Pria", sHarga: "Rp 199.000", ukuran: "XS-3XL", nama: "UT (T-Shirt) The Super Mario Galaxy Movie", harga: 199000, image: "Asset_Tugas/Pria/Produk3.jpg", cekDiskon: false, margin: 28, padding: 23}, 
+    { id: 3, kategori: "Kaos", jenisKelamin: "Pria", sHarga: "Rp 199.000", ukuran: "XS-3XL", nama: "UT (T-Shirt) The Super Mario Galaxy Movie", harga: 199000, image: "Asset_Tugas/Pria/Produk3.jpg", cekDiskon: false, margin: 28, padding: 23, margin2: 250}, 
 
-    { id: 4, kategori: "Jaket", jenisKelamin: "Pria", sHarga: "Rp 699.000", ukuran: "S-XL", nama: "Jaket Coach Peanuts", harga: 699000, image: "Asset_Tugas/Pria/Produk4.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 899.000", margin: 20, padding: 23}, 
+    { id: 4, kategori: "Jaket", jenisKelamin: "Pria", sHarga: "Rp 699.000", ukuran: "S-XL", nama: "Jaket Coach Peanuts", harga: 699000, image: "Asset_Tugas/Pria/Produk4.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 899.000", margin: 20, padding: 23, margin2: 250}, 
 
-    { id: 5, kategori: "Kemeja", jenisKelamin: "Wanita", sHarga: "Rp 349.000", ukuran: "S-3XL", nama: "Kemeja Body Denim Lengan", harga: 349000, image: "Asset_Tugas/Wanita/Produk5.jpg", cekDiskon: false, margin: 28, padding: 23}, 
+    { id: 5, kategori: "Kemeja", jenisKelamin: "Wanita", sHarga: "Rp 349.000", ukuran: "S-3XL", nama: "Kemeja Body Denim Lengan", harga: 349000, image: "Asset_Tugas/Wanita/Produk5.jpg", cekDiskon: false, margin: 28, padding: 23, margin2: 250}, 
 
-    { id: 6, kategori: "Kemeja", jenisKelamin: "Wanita", sHarga: "Rp 349.000", ukuran: "S-3XL", nama: "Kemeja Oxford Boxy Lengan Pendek", harga: 349000, image: "Asset_Tugas/Wanita/Produk6.jpg", cekDiskon: false, margin: 28, padding: 23}, 
+    { id: 6, kategori: "Kemeja", jenisKelamin: "Wanita", sHarga: "Rp 349.000", ukuran: "S-3XL", nama: "Kemeja Oxford Boxy Lengan Pendek", harga: 349000, image: "Asset_Tugas/Wanita/Produk6.jpg", cekDiskon: false, margin: 28, padding: 23, margin2: 250}, 
 
-    { id: 7, kategori: "Jaket", jenisKelamin: "Wanita", sHarga: "Rp 129.000", ukuran: "XS-M", nama: "ALRISM Katun T-Shirt", harga: 129000, image: "Asset_Tugas/Wanita/Produk7.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 199.000", margin: 20, padding: 23}, 
+    { id: 7, kategori: "Jaket", jenisKelamin: "Wanita", sHarga: "Rp 129.000", ukuran: "XS-M", nama: "ALRISM Katun T-Shirt", harga: 129000, image: "Asset_Tugas/Wanita/Produk7.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 199.000", margin: 20, padding: 23, margin2: 310}, 
 
-    { id: 8, kategori: "Kaos", jenisKelamin: "Wanita", sHarga: "Rp 399.000", ukuran: "M-XL", nama: "Jaket Aktif Ultra Stretch Ritsleting", harga: 399000, image: "Asset_Tugas/Wanita/Produk8.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 499.000", margin: 1, padding: 23}, 
+    { id: 8, kategori: "Kaos", jenisKelamin: "Wanita", sHarga: "Rp 399.000", ukuran: "M-XL", nama: "Jaket Aktif Ultra Stretch Ritsleting", harga: 399000, image: "Asset_Tugas/Wanita/Produk8.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 499.000", margin: 1, padding: 23, margin2: 310}, 
 
-    { id: 9, kategori: "Kaos", jenisKelamin: "Anak", sHarga: "Rp 149.000", ukuran: "4-5Y (110cm)-14Y(160cm)", nama: "KIDS Alrism Katun T-Shirt Garis Kerah Bulat", harga: 149000, image: "Asset_Tugas/Anak/Produk9.jpg", cekDiskon: false, margin: 6, padding: 23}, 
+    { id: 9, kategori: "Kaos", jenisKelamin: "Anak", sHarga: "Rp 149.000", ukuran: "4-5Y (110cm)-14Y(160cm)", nama: "KIDS Alrism Katun T-Shirt Garis Kerah Bulat", harga: 149000, image: "Asset_Tugas/Anak/Produk9.jpg", cekDiskon: false, margin: 6, padding: 23, margin2: 310}, 
 
-    { id: 10, kategori: "Kaos", jenisKelamin: "Anak", sHarga: "Rp 149.000", ukuran: "4-5Y (110cm)-14Y(160cm)", nama: "KIDS Alrism Katun T-Shirt Grafis Kerah Bulat", harga: 149000, image: "Asset_Tugas/Anak/Produk10.jpg", cekDiskon: false, margin: 6, padding: 23}, 
+    { id: 10, kategori: "Kaos", jenisKelamin: "Anak", sHarga: "Rp 149.000", ukuran: "4-5Y (110cm)-14Y(160cm)", nama: "KIDS Alrism Katun T-Shirt Grafis Kerah Bulat", harga: 149000, image: "Asset_Tugas/Anak/Produk10.jpg", cekDiskon: false, margin: 6, padding: 23, margin2: 310}, 
 ]
 
 function renderTampilanDepan(kategori, jenisKelamin, harga) {
@@ -70,7 +70,7 @@ function renderTampilanDepan(kategori, jenisKelamin, harga) {
                         <h5 class="fw-bold fs-6">${p.nama}</h5>
                         <h6 class="text-danger fw-bold fs-5">${p.sHarga}</h6>
                         <h6 class="fw-bold text-secondary"><strike>${p.hargaSebelumDiskon}</strike></h6>
-                        <button type="button" class="btn bg-black text-white" style="position: absolute; padding-right: ${p.padding}px; margin-top: ${p.margin}px;" onclick="tambahKeCart('${p.image}', '${p.nama}', '${p.jenisKelamin}, ${p.ukuran}', '${p.sHarga}', '${p.harga}', '1')">Tambah Ke Keranjang</button>
+                        <button type="button" class="btn bg-black text-white" style="position: absolute; padding-right: ${p.padding}px; margin-top: ${p.margin}px;" onclick="tambahKeCart('${p.image}', '${p.nama}', '${p.jenisKelamin}', '${p.ukuran}', '${p.sHarga}', ${p.harga}, '1', ${p.margin2})">Tambah Ke Keranjang</button>
                     </div>
                 </div>
             `;
@@ -84,7 +84,7 @@ function renderTampilanDepan(kategori, jenisKelamin, harga) {
                         <p class="text-secondary">${p.jenisKelamin}, ${p.ukuran}</p>
                         <h5 class="fw-bold fs-6">${p.nama}</h5>
                         <h6 class="text-dark fw-bold fs-5 ">${p.sHarga}</h6>
-                        <button type="button" class="btn bg-black text-white" style="position: absolute; padding-right: ${p.padding}px; margin-top: ${p.margin}px;" onclick="tambahKeCart('${p.image}', '${p.nama}', '${p.jenisKelamin}, ${p.ukuran}', '${p.sHarga}', '${p.harga}', '1')">Tambah Ke Keranjang</button>
+                        <button type="button" class="btn bg-black text-white" style="position: absolute; padding-right: ${p.padding}px; margin-top: ${p.margin}px;" onclick="tambahKeCart('${p.image}', '${p.nama}', '${p.jenisKelamin}', '${p.ukuran}', '${p.sHarga}', ${p.harga}, '1', ${p.margin2})">Tambah Ke Keranjang</button>
                     </div>
                 </div>
             `;
@@ -105,3 +105,27 @@ let kategoriAwal = document.querySelector("#kategori");
 let jenisKelaminAwal = document.querySelector('input[name="radioDefault"]:checked');
 let hargaAwal = document.querySelector("#urutkan");
 renderTampilanDepan(kategoriAwal, jenisKelaminAwal, hargaAwal);
+
+let containerProduk = document.querySelector('#pilihProduk');
+let containerCart = document.querySelector('#cartProduk');
+containerCart.classList.add('hilangkanDisplay');
+
+let teksProduk = document.querySelector('#pro');
+let teksCart = document.querySelector('#ca');
+teksProduk.classList.add('bold')
+
+let btnCart = document.querySelector('#cart');
+btnCart.addEventListener("click", function(e) {
+    containerCart.classList.remove('hilangkanDisplay');
+    teksCart.classList.add('bold')
+    teksProduk.classList.remove('bold')
+    containerProduk.classList.add('hilangkanDisplay')
+})
+
+let btnProduk = document.querySelector('#produk');
+btnProduk.addEventListener("click", function(e) {
+    containerProduk.classList.remove('hilangkanDisplay');
+    teksProduk.classList.add('bold')
+    teksCart.classList.remove('bold')
+    containerCart.classList.add('hilangkanDisplay')
+})
