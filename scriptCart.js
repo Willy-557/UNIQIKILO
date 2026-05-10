@@ -16,6 +16,7 @@ function renderCart() {
             </div>
         `;
     } else {
+        // 
         cart.forEach(c => {
             isiKeranjang.innerHTML += `
                 <div class="d-flex" style="margin: 10px 0px;">
