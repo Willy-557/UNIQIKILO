@@ -1,5 +1,4 @@
-let cart = [];
-let isiKeranjang = document.querySelector('#item1');
+
 
 const produk = [ 
     { id: 1, kategori: "Kaos", jenisKelamin: "Pria", sHarga: "Rp 129.000", ukuran: "XS-3XL", nama: "T-Shirt Soft Touch Kerah Bulat Lengan Panjang", harga: 129000, image: "Asset_Tugas/Pria/Produk1.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 199.000", margin: 0, padding: 23}, 
@@ -71,7 +70,7 @@ function renderTampilanDepan(kategori, jenisKelamin, harga) {
                         <h5 class="fw-bold fs-6">${p.nama}</h5>
                         <h6 class="text-danger fw-bold fs-5">${p.sHarga}</h6>
                         <h6 class="fw-bold text-secondary"><strike>${p.hargaSebelumDiskon}</strike></h6>
-                        <button type="button" class="btn bg-black text-white" style="position: absolute; padding-right: ${p.padding}px; margin-top: ${p.margin}px;" onclick="tambahKeCart('${p.image}', '${p.nama}', '${p.jenisKelamin}, ${p.ukuran}', '${p.sHarga}')">Tambah Ke Keranjang</button>
+                        <button type="button" class="btn bg-black text-white" style="position: absolute; padding-right: ${p.padding}px; margin-top: ${p.margin}px;" onclick="tambahKeCart('${p.image}', '${p.nama}', '${p.jenisKelamin}, ${p.ukuran}', '${p.sHarga}', '${p.harga}', '1')">Tambah Ke Keranjang</button>
                     </div>
                 </div>
             `;
@@ -85,7 +84,7 @@ function renderTampilanDepan(kategori, jenisKelamin, harga) {
                         <p class="text-secondary">${p.jenisKelamin}, ${p.ukuran}</p>
                         <h5 class="fw-bold fs-6">${p.nama}</h5>
                         <h6 class="text-dark fw-bold fs-5 ">${p.sHarga}</h6>
-                        <button type="button" class="btn bg-black text-white" style="position: absolute; padding-right: ${p.padding}px; margin-top: ${p.margin}px;" onclick="tambahKeCart('${p.image}', '${p.nama}', '${p.jenisKelamin}, ${p.ukuran}', '${p.sHarga}')">Tambah Ke Keranjang</button>
+                        <button type="button" class="btn bg-black text-white" style="position: absolute; padding-right: ${p.padding}px; margin-top: ${p.margin}px;" onclick="tambahKeCart('${p.image}', '${p.nama}', '${p.jenisKelamin}, ${p.ukuran}', '${p.sHarga}', '${p.harga}', '1')">Tambah Ke Keranjang</button>
                     </div>
                 </div>
             `;

@@ -32,7 +32,7 @@
         <h3 class="mt-5 mb-3">Keranjang Belanja</h3>
 
         <div id="item1">
-            <div class="d-flex" style="margin: 10px 0px;">
+            <!-- <div class="d-flex" style="margin: 10px 0px;">
                 <img src="Asset_Tugas/Pria/Produk1.jpg" class="img-fluid rounded-start" alt="...">
                 <div class="w-100 shadow-sm">
                     <div class="d-flex justify-content-between" style="margin-top: 150px;">
@@ -52,32 +52,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-flex">
-                <img src="Asset_Tugas/Pria/Produk1.jpg" class="img-fluid rounded-start" alt="...">
-                <div class="w-100 shadow-sm">
-                    <div class="d-flex justify-content-between" style="margin-top: 150px;">
-                        <div class="item ms-3">
-                            <h5 class="card-title">Kemeja Body Denim Lengan</h5>
-                            <p class="card-text">Wanita, S-3XL</p>
-                            <p class="card-text text-body-secondary">Rp 349.000</p>
-                        </div>
-                        <div class="item d-flex">
-                            <button class="btn btn-outline-secondary" style="margin-top: 30px; margin-bottom: 70px;" type="button">-</button>
-                            <p style="margin: 37px 10px;">2</p>
-                            <button class="btn btn-outline-secondary" style="margin-top: 30px; margin-bottom: 70px;" type="button">+</button>
-                        </div>
-                        <div class="item mt-1 me-3">
-                            <h6 class="fw-bold">Rp 698.000</h6>
-                            <button type="button" class="btn btn-danger mt-3 ms-3">Hapus</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="d-flex justify-content-between mt-3">
-            <h3>Total: Rp0</h3>
+            <div class="d-flex">
+                <h3>Total: Rp</h3>
+                <h3 id="totalHarga" style="margin-left: 6px;"></h3>
+            </div>
             <button type="button" class="btn btn-outline-danger mt-0" id="btnDeleteAll">Kosongkan Keranjang</button>
         </div>
     </div>
@@ -120,7 +102,7 @@
             </div>
         </div>
     </span>
-    
+
     <script src="scriptCart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
