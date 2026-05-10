@@ -17,7 +17,7 @@ function renderCart() {
         `;
     } else {
         isiKeranjang.innerHTML = ""
-        cart.forEach(c => {
+        cart.forEach((c, idx) => {
             isiKeranjang.innerHTML += `
                 <div class="d-flex" style="margin: 10px 0px;">
                     <img src="${c.image}" class="img-fluid rounded-start" style="width: ${c.marginGambar}px;" alt="...">
@@ -35,7 +35,7 @@ function renderCart() {
                             </div>
                             <div class="item mt-1 me-3">
                                 <h6 class="fw-bold">${c.StringHarga}</h6>
-                                <button type="button" class="btn btn-danger mt-3 ms-3">Hapus</button>
+                                <button type="button" class="btn btn-danger mt-3 ms-3" onclick="hapusItem(${idx})">Hapus</button>
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ function renderCart() {
     }
 }
 
-function tambahKeCart(gambar, nama, jenisKelamin, ukuran, sHarga, harga, jumlah, margin2) {
+function tambahKeCart(gambar, nama, jenisKelamin, ukuran, sHarga, harga, jumlah, margin2, id) {
     if (cart.length === 0) {
         total += harga;
 
@@ -57,7 +57,8 @@ function tambahKeCart(gambar, nama, jenisKelamin, ukuran, sHarga, harga, jumlah,
             StringHarga: sHarga,
             hargaNum : harga,
             jumlahPesan: jumlah,
-            marginGambar: margin2
+            marginGambar: margin2,
+            idProduk: id
         })  
     } else {
         total += harga;
@@ -70,7 +71,8 @@ function tambahKeCart(gambar, nama, jenisKelamin, ukuran, sHarga, harga, jumlah,
             StringHarga: sHarga,
             hargaNum : harga,
             jumlahPesan: jumlah,
-            marginGambar: margin2
+            marginGambar: margin2,
+            idProduk: id
         })
     }
 
@@ -83,6 +85,11 @@ btnDeleteAll.addEventListener("click", function(e) {
     cart = [];
     renderCart();
 })
+
+function hapusItem(target) {
+    cart.splice(target, 1);
+    renderCart();
+}
 
 let ambilTotalHarga = document.querySelector("#totalHarga");
 ambilTotalHarga.innerHTML = total;
