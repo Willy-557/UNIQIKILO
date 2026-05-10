@@ -1,4 +1,4 @@
-
+let isiTotalProduk = document.querySelector('#angkaProduk');
 
 const produk = [ 
     { id: 1, kategori: "Kaos", jenisKelamin: "Pria", sHarga: "Rp 129.000", ukuran: "XS-3XL", nama: "T-Shirt Soft Touch Kerah Bulat Lengan Panjang", harga: 129000, image: "Asset_Tugas/Pria/Produk1.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 199.000", margin: 0, padding: 23, margin2: 250}, 
@@ -23,6 +23,7 @@ const produk = [
 ]
 
 function renderTampilanDepan(kategori, jenisKelamin, harga) {
+    let totalProduk = 0;
     const tampilan = document.querySelector("#tampilkanProduk");
     tampilan.innerHTML = "";
 
@@ -59,8 +60,10 @@ function renderTampilanDepan(kategori, jenisKelamin, harga) {
         }
     }
 
+    
     hasilFilter.forEach(p => {
         if (p.cekDiskon == true) {
+            totalProduk += 1;
             tampilan.innerHTML += `
                 <div class="card" style="width: 14rem; height: 550px;">
                     <img src="${p.image}" class="card-img-top" alt="...">
@@ -76,6 +79,7 @@ function renderTampilanDepan(kategori, jenisKelamin, harga) {
             `;
         }
         else {
+            totalProduk += 1;
             tampilan.innerHTML += `
                 <div class="card" style="width: 14rem; height: 550px;">
                     <img src="${p.image}" class="card-img-top" alt="...">
@@ -90,6 +94,8 @@ function renderTampilanDepan(kategori, jenisKelamin, harga) {
             `;
         }
     })
+
+    isiTotalProduk.innerHTML = totalProduk;
 }
 
 let btnFilterr = document.querySelector("#btnFilter")
@@ -129,3 +135,5 @@ btnProduk.addEventListener("click", function(e) {
     teksCart.classList.remove('bold')
     containerCart.classList.add('hilangkanDisplay')
 })
+
+
