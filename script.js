@@ -1,4 +1,5 @@
 let cart = [];
+let isiKeranjang = document.querySelector('#item1');
 
 const produk = [ 
     { id: 1, kategori: "Kaos", jenisKelamin: "Pria", sHarga: "Rp 129.000", ukuran: "XS-3XL", nama: "T-Shirt Soft Touch Kerah Bulat Lengan Panjang", harga: 129000, image: "Asset_Tugas/Pria/Produk1.jpg", cekDiskon: true, hargaSebelumDiskon: "Rp 199.000", margin: 0, padding: 23}, 
@@ -21,27 +22,6 @@ const produk = [
 
     { id: 10, kategori: "Kaos", jenisKelamin: "Anak", sHarga: "Rp 149.000", ukuran: "4-5Y (110cm)-14Y(160cm)", nama: "KIDS Alrism Katun T-Shirt Grafis Kerah Bulat", harga: 149000, image: "Asset_Tugas/Anak/Produk10.jpg", cekDiskon: false, margin: 6, padding: 23}, 
 ]
-
-function renderCart() {
-    if (cart.length == 0) {
-        document.getElementById("item1").innerHTML = `
-            <div class="text-center">
-                <div class="card-body" style="margin: 100px 0px;">
-                    <h5 class="card-title mb-2">Keranjang Kamu Kosong</h5>
-                    <p class="card-text mb-4">Yuk Belanja Dulu Di Halaman Produk</p>
-                    <a href="index.html" class="btn btn-dark">Belanja Sekarang</a>
-                </div>
-            </div>
-        `;
-    }
-    else {
-
-    }
-}
-
-function tambahKeCart(gambar, namaBaju, ukuran, harga) {
-    
-}
 
 function renderTampilanDepan(kategori, jenisKelamin, harga) {
     const tampilan = document.querySelector("#tampilkanProduk");
@@ -126,5 +106,3 @@ let kategoriAwal = document.querySelector("#kategori");
 let jenisKelaminAwal = document.querySelector('input[name="radioDefault"]:checked');
 let hargaAwal = document.querySelector("#urutkan");
 renderTampilanDepan(kategoriAwal, jenisKelaminAwal, hargaAwal);
-
-renderCart();
