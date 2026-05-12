@@ -52,6 +52,7 @@ function renderCart() {
 }
 
 function tambahKeCart(gambar, nama, jenisKelamin, ukuran, sHarga, harga, jumlah, margin2, id) {
+    alert("Produk berhasil ditambahkan ke keranjang!")
     if (cart.length === 0) {
         cart.push({
             image: gambar,
